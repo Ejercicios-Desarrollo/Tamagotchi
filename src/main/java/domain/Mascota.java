@@ -54,8 +54,8 @@ public abstract class Mascota {
 
     }
 
-    public void caminarHacia(Punto unPunto){
-
+    public void caminaHacia(Punto unPunto){
+        this.estado.caminaHacia(this, unPunto);
     }
 
     public void disminuirEnergiaEn(Integer unidades){

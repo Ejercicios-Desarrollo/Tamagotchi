@@ -11,8 +11,8 @@ public class Memetchi extends Mascota {
     }
 
     @Override
-    public void caminarHacia(Punto unPunto) {
-        super.caminarHacia(unPunto);
+    public void caminaHacia(Punto unPunto) {
+        super.caminaHacia(unPunto);
         this.hambre += 5;
         if(this.hambre > 25){
             this.hambrienta = true;

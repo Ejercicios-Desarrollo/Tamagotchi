@@ -1,6 +1,7 @@
 package domain.estados;
 
 import domain.Mascota;
+import domain.Punto;
 
 public class Hambrienta implements Estado {
     @Override
@@ -16,5 +17,15 @@ public class Hambrienta implements Estado {
     @Override
     public Boolean podesJugar() {
         return false;
+    }
+
+    @Override
+    public void caminaHacia(Mascota mascota, Punto unPunto) {
+
+    }
+
+    @Override
+    public void descansa(Mascota mascota) {
+
     }
 }

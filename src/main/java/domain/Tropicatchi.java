@@ -11,8 +11,8 @@ public class Tropicatchi extends Mascota {
     }
 
     @Override
-    public void caminarHacia(Punto unPunto) {
-        super.caminarHacia(unPunto);
+    public void caminaHacia(Punto unPunto) {
+        super.caminaHacia(unPunto);
         this.masaMuscular += 10;
         if(this.masaMuscular > 90){
             this.enForma = true;
