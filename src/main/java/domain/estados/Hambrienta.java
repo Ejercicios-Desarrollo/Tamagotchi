@@ -28,4 +28,8 @@ public class Hambrienta implements Estado {
     public void descansa(Mascota mascota) {
 
     }
+
+    public String getEstado(){
+        return "Hambrienta";
+    }
 }

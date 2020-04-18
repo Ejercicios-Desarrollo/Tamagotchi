@@ -50,4 +50,8 @@ public class Aburrida implements Estado {
     public void descansa(Mascota mascota){
         mascota.aumentarEnergiaEn(2);
     }
+
+    public String getEstado(){
+        return "Aburrida";
+    }
 }

@@ -9,4 +9,5 @@ public interface Estado {
     public Boolean podesJugar();
     public void caminaHacia(Mascota mascota, Punto unPunto);
     public void descansa(Mascota mascota);
+    public String getEstado();
 }

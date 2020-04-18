@@ -14,7 +14,7 @@ public abstract class Mascota {
         this.nombre = nombre;
         this.nivelDeFelicidad = 0;
         this.estado = new Contenta();
-        this.energia = 0;
+        this.energia = 100;
         this.animo = 0;
     }
 
@@ -26,8 +26,8 @@ public abstract class Mascota {
         return nivelDeFelicidad;
     }
 
-    public Estado getEstado() {
-        return estado;
+    public String getEstado() {
+        return this.estado.getEstado();
     }
 
     public void juga(){
@@ -51,7 +51,7 @@ public abstract class Mascota {
     }
 
     public void descansa(){
-
+        this.estado.descansa(this);
     }
 
     public void caminaHacia(Punto unPunto){
@@ -81,4 +81,5 @@ public abstract class Mascota {
     public Integer getEnergia() {
         return energia;
     }
+
 }

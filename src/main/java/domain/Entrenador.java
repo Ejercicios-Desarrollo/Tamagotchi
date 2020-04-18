@@ -22,13 +22,13 @@ public class Entrenador {
     }
 
     public void desplazarseA(Punto unPunto){
-        this.mascotas.forEach(m -> m.caminarHacia(unPunto));
+        this.mascotas.forEach(m -> m.caminaHacia(unPunto));
     }
 
     public void darRespiroAMascotas(){
         this.mascotas
                 .stream()
-                .filter(m -> m.getEstado().equals(new Cansada()))
+                .filter(m -> m.getEstado().equals("Cansada"))
                 .collect(Collectors.toList())
                 .forEach(m -> m.descansa());
     }

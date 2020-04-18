@@ -31,4 +31,8 @@ public class Cansada implements Estado{
             mascota.cambiarEstado(new Aburrida());
         }
     }
+
+    public String getEstado(){
+        return "Cansada";
+    }
 }
